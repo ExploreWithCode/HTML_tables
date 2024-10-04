@@ -3,68 +3,67 @@
 <head>
 	<title>Formulas</title>
 
-  <!-- CSS file -->
-  <link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
+	<!-- CSS file -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.11.5/css/jquery.dataTables.min.css">
 
-  <!-- jQuery library -->
-  <script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<!-- jQuery library -->
+	<script type="text/javascript" charset="utf8" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
-  <!-- DataTables library -->
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
+	<!-- DataTables library -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.11.5/js/jquery.dataTables.min.js"></script>
 
-  <!-- FixedHeader extension -->
-  <script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.2.3/js/dataTables.fixedHeader.min.js"></script>
-   <script>
-  $(document).ready(function() {
-    $('#myTable').DataTable( {
-      fixedHeader: true
-    } );
-  } );
- </script>
- <style>
-  div.scroller {
-  width: 100%;
-  /*height: 50%;*/
-  overflow-y: scroll;
-  scrollbar-color: pink aquamarine;
-  }
-  table {
-  width: 100%;
-  text-align: center;
-  counter-reset: rowNumber;
-  background-color: CadetBlue;
-  }
-  table tbody tr {
-  counter-increment: rowNumber;
-  }
-  table tbody tr td:first-child:before {
-  content: counter(rowNumber);
-  color: blue;
-  }
-  table, th, td {
-  border: 1px solid darkslategrey;
-  }
-  tr:hover {background-color: CornflowerBlue;}
-  td:hover {background-color: aqua;}
- </style>
+	<!-- FixedHeader extension -->
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/fixedheader/3.2.3/js/dataTables.fixedHeader.min.js"></script>
+	<script>
+	$(document).ready(function() {
+		$('#myTable').DataTable( {
+		fixedHeader: true
+		} );
+	} );
+	</script>
+	<style>
+		div.scroller {
+		width: 100%;
+		/*height: 50%;*/
+		overflow-y: scroll;
+		scrollbar-color: pink aquamarine;
+		}
+		table {
+		width: 100%;
+		text-align: center;
+		counter-reset: rowNumber;
+		background-color: CadetBlue;
+		}
+		table tbody tr {
+		counter-increment: rowNumber;
+		}
+		table tbody tr td:first-child:before {
+		content: counter(rowNumber);
+		color: blue;
+		}
+		table, th, td {
+		border: 1px solid darkslategrey;
+		}
+		tr:hover {background-color: CornflowerBlue;}
+		td:hover {background-color: aqua;}
+	</style>
 
 </head>
 <body bgcolor="powderblue">
-<p align=center style="font-size: 50px;">Mathematical formulas</p>
-<th>Table header</th><br><br>
+<p align="center" style="font-size: 50px;">Mathematical formulas</p>
+<th>Search for a formula</th><br><br>
 <div class="scroller" style="overflow-x:auto;">
 <table id="myTable">
-	<thead bgcolor= MediumAquaMarine>
-		<tr><th>#</th><th>Name</th><th>Formula</th><th>Description</th></tr>
+	<thead bgcolor="MediumAquaMarine">
+		<tr> <th>#</th> <th>Name</th> <th>Formula</th> <th>Description</th> </tr>
 	</thead>
-	<tbody bgcolor= lightblue>
+	<tbody bgcolor="lightblue">
 		<tr>
 			<td></td>
 			<td>Weighted average</td>
 			<td>Weighted Average = (Price1 * Volume1 + Price2 * Volume2 + ... + PriceN * VolumeN) / Total Volume</td>
 			<td>
 			Where:<br><br>
-
 			<b><i>PriceX</i></b> is the price of each data point.<br>
 			<b><i>VolumeX</i></b> is the quantity or weight of each data point.<br>
 			<b><i>Total Volume</i></b> is the sum of all volumes.<br>
@@ -115,8 +114,8 @@
 			<td>Return On Investment (ROI)</td>
 			<td>roi = (value - cost) / cost</td>
 			<td>If the value is lower than the cost, that indicates loss.</td>
-			</tr>
-			<tr>
+		</tr>
+		<tr>
 			<td></td>
 			<td>Annual Percentage Yield (APY)</td>
 			<td>apy = (1 + rate / n)^n - 1</td>
